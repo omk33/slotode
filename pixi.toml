@@ -1,0 +1,20 @@
+[workspace]
+authors = ["omkathira <33336845+omkathira@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "slotode"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.14.*"
+
+[pypi-dependencies]
+matplotlib = ">=3.11.1, <4"
+pillow = ">=12.3.0, <13"
+jax = { version = ">=0.11.0, <0.12", extras = ["cuda13"] }
+equinox = ">=0.13.8, <0.14"
+optax = ">=0.2.8, <0.3"
+diffrax = ">=0.7.2, <0.8"
+mlflow = ">=3.15.1, <4"
